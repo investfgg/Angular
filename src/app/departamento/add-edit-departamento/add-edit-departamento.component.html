@@ -1,0 +1,14 @@
+<div class="d-flex flex-row bd-highlight mb-9">
+    <div class="p-2 w-100 bd-highlight">
+        <div class="input-group mb-12">
+        <span class="input-group-text">Nome do Departamento</span>
+        <input type="text" class="form-control" [(ngModel)]="NomeDepto"> 
+      </div>
+    </div>
+  </div>
+  <button (click)="addDepartamento()" *ngIf="depart.DepartmentId == '0'" class="btn btn-primary">
+    Inclui
+  </button>
+    <button (click)="updDepartamento()" *ngIf="depart.DepartmentId !='0'" class="btn btn-primary">
+    Exclui
+  </button>
